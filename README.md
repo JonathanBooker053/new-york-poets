@@ -12,6 +12,7 @@ This repository contains the final project for **En/VC 117: New York School of P
    - Click the green **Code** button on the GitHub repository page.
    - Select **Download ZIP** and save the file to your computer.
    - Unzip the downloaded file.
+   - Move the `.env` file that has been sent to you into the unzipped project folder.
 
 2. **Open Terminal:**
    - Press `Command + Space` to open Spotlight Search.
