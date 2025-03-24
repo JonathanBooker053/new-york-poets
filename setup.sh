@@ -1,7 +1,21 @@
-
-
 #!/bin/bash
 set -e
+
+# Check if Homebrew is installed
+if ! command -v brew >/dev/null 2>&1; then
+    echo "Homebrew not found. Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "Homebrew is already installed."
+fi
+
+# Check if Python3 is installed
+if ! command -v python3 >/dev/null 2>&1; then
+    echo "Python3 not found. Installing Python3 via Homebrew..."
+    brew install python
+else
+    echo "Python3 is already installed."
+fi
 
 # Create a virtual environment if it doesn't exist
 if [ ! -d "venv" ]; then
